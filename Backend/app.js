@@ -7,8 +7,6 @@ const dotenv = require('dotenv')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const passport = require("passport")
-const PORT = 3001;
-const dotenv = require('dotenv').config();
 
 const customerRoutes = require('./routes/customerRoutes')
 const statsRoutes = require('./routes/statsRoutes')
@@ -44,6 +42,6 @@ mongoose.connect('mongodb+srv://otb:otb@cluster0.mheoi.mongodb.net/Camping?retry
     res.send('homepage working');
 });
 
-   app.listen(PORT, () => {
-    console.log("Server is running on port: "+PORT)
+   app.listen(process.env.PORT, () => {
+    console.log("Server is running on port: "+process.env.PORT)
 })
