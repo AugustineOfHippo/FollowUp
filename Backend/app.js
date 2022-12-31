@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const passport = require("passport")
 const PORT = 3001;
+const dotenv = require('dotenv').config();
 
 const customerRoutes = require('./routes/customerRoutes')
 const statsRoutes = require('./routes/statsRoutes')
