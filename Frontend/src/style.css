@@ -1,0 +1,848 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+html, body {
+  font-family: 'Blinker', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.mainpageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.mainpageContainer .mainpageContent {
+  min-width: 60rem;
+  width: 100%;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent {
+  background-color: #2B2D42;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 20rem;
+  min-width: 10rem;
+  max-width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentLogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentLogoContainer h3 {
+  margin: 0;
+  padding: 0;
+  margin-left: 0.4rem;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentLogoContainer .contentLogo1 {
+  max-width: 3rem;
+  width: 3rem;
+  max-height: 3rem;
+  height: 3rem;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentLogoContainer .contentLogo1 i {
+  color: #2B2D42;
+  font-size: 2rem;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentLogoContainer .contentLogo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentLogoContainer .contentLogo2 i {
+  font-size: 1.2rem;
+  color: #2B2D42;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentCallsContainer h2:nth-of-type(1) {
+  margin-top: 0.5rem;
+}
+
+.mainpageContainer .mainpageContent .callsStatsContainer .callsContent .contentCallsContainer h2 {
+  margin: 0;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer {
+  min-width: 50rem;
+  width: 80rem;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent {
+  width: 20rem;
+  min-width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .addCallButton button {
+  color: #2B2D42;
+  width: 6rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #2B2D42;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .addCallButton button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#D6041D), color-stop(107.5%, rgba(239, 35, 60, 0.65)));
+  background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .searchBar form {
+  height: 1.3rem;
+  margin-left: 0.5rem;
+  border: 1px solid #2B2D42;
+  border-radius: 5px;
+  padding: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .searchBar input {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  outline: none;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .searchBar select {
+  background-color: transparent;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 6rem;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .searchBar select:hover {
+  cursor: pointer;
+  color: #EF233C;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .searchBar button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .searchBar button:hover {
+  cursor: pointer;
+  color: #EF233C;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons {
+  display: inline-block;
+  margin-left: 0.5rem;
+  position: relative;
+  z-index: 9999;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons:hover .filterList {
+  display: block;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons .filterList {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  border: 1px solid #2B2D42;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2B2D42;
+  color: #ffffff;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons .filterList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 6rem;
+  height: 2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons .filterList li:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#D6041D), color-stop(107.5%, rgba(239, 35, 60, 0.65)));
+  background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons button {
+  color: #2B2D42;
+  width: 6rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #2B2D42;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#D6041D), color-stop(107.5%, rgba(239, 35, 60, 0.65)));
+  background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons i {
+  color: #2B2D42;
+  font-size: 2rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons select {
+  margin-left: 0.3rem;
+  background-color: #2B2D42;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .filterBarButtons select:hover {
+  color: #11d42e;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton {
+  display: inline-block;
+  position: relative;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton:hover #calendarLogo {
+  cursor: pointer;
+  color: #D6041D;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton i {
+  margin-left: 0.5rem;
+  font-size: 2rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: white;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate form button {
+  background-color: transparent;
+  border: none;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div input {
+  border: none;
+  outline: none;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div input:focus {
+  color: #EF233C;
+  border-bottom: 1px solid #EF233C;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div input:nth-of-type(1) {
+  margin-left: 0.2rem;
+  width: 1.5rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div input:nth-of-type(2) {
+  margin-left: 0.2rem;
+  width: 1.5rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div input:nth-of-type(3) {
+  margin-left: 0.2rem;
+  width: 2.4rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div h5 {
+  margin: 0;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate div:nth-of-type(2) {
+  margin-left: 0.4rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate #rightArrowSearch {
+  font-size: 1.5rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .selectDate #rightArrowSearch:hover {
+  cursor: pointer;
+  color: #EF233C;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarHeader select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarHeader select:hover {
+  cursor: pointer;
+  color: #EF233C;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarHeader input {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  width: 2.3rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarHeader input:focus {
+  color: #EF233C;
+  border-bottom: 1px solid #EF233C;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarDays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 21rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+  text-align: center;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarDays li {
+  width: 2.15rem;
+  border-radius: 3px;
+  padding: 0.2rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarBody {
+  width: 21rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  row-gap: 0.4rem;
+  -webkit-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarBody .calendarDaySquare {
+  width: 2rem;
+  border: 1px solid #2B2D42;
+  border-radius: 3px;
+  padding: 0.2rem;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarBody .calendarDaySquare p {
+  margin: 0;
+}
+
+.mainpageContainer .mainpageContent .searchBarContainer .searchBarContent .calendarFilterButton .calendarContainer .calendarContent .calendarBody .calendarDaySquare:hover {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#D6041D), color-stop(107.5%, rgba(239, 35, 60, 0.65)));
+  background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+}
+
+.mainpageContainer .mainpageContent .callsContainer {
+  width: 82rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+  height: 37rem;
+  overflow: scroll;
+  position: relative;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80rem;
+  min-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 0.2rem;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer h4, .mainpageContainer .mainpageContent .callsContainer .callerContainer h6 {
+  margin: 0;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer h4 {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerStatus {
+  width: 8%;
+  max-width: 8%;
+  min-width: 6%;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerStatus h4 {
+  text-transform: uppercase;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerStatus .customerEditDeleteContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  left: -2.5%;
+  border: none;
+  opacity: 10%;
+  z-index: 998;
+  padding: 0rem 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerStatus .customerEditDeleteContainer i {
+  font-size: 1.2rem;
+  color: #D90429;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerStatus .customerEditDeleteContainer i:hover {
+  color: #EF233C;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerPhone {
+  width: 10%;
+  max-width: 10%;
+  min-width: 9%;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerName {
+  width: 15%;
+  max-width: 15%;
+  min-width: 12%;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerTruck {
+  width: 15%;
+  max-width: 20%;
+  min-width: 15%;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerPart {
+  width: 15%;
+  max-width: 15%;
+  min-width: 10%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerPrice {
+  width: 6%;
+  max-width: 6%;
+  min-width: 5%;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer .customerNotes {
+  width: 30%;
+  min-width: 15%;
+  max-width: 31%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer:hover {
+  background-color: #2B2D42;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer:hover .customerPart {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+  word-wrap: break-all;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer:hover .customerNotes {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+  word-wrap: break-all;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer:hover h6 {
+  color: #ffffff;
+}
+
+.mainpageContainer .mainpageContent .callsContainer .callerContainer:hover .customerEditDeleteContainer {
+  display: block;
+  opacity: 100;
+  cursor: pointer;
+}
+
+.mainpageContainer #editCustomerForm {
+  z-index: 999;
+  background-color: #ffffff;
+  position: absolute;
+  left: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  color: #2B2D42;
+}
+
+.mainpageContainer #editCustomerForm input {
+  padding: 0.5rem;
+  outline: none;
+  border: 0.5px solid #2B2D42;
+  border-radius: 3px;
+  color: #2B2D42;
+  font-weight: 600;
+}
+
+.mainpageContainer #editCustomerForm input:focus {
+  border-color: #EF233C;
+  color: #D90429;
+}
+
+.mainpageContainer #editCustomerForm #editStatus h4 {
+  margin: 0;
+}
+
+.mainpageContainer #editCustomerForm #editStatus select {
+  background-color: transparent;
+  border: 1px solid #2B2D42;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 5rem;
+  max-width: 5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.mainpageContainer #editCustomerForm #editStatus select:hover {
+  cursor: pointer;
+  color: #EF233C;
+}
+
+.mainpageContainer #editCustomerForm #editPhoneCustomer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainpageContainer #editCustomerForm #editPhoneCustomer div:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.mainpageContainer #editCustomerForm #editTruckPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainpageContainer #editCustomerForm #editTruckPart div:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.mainpageContainer #editCustomerForm #editButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.mainpageContainer #editCustomerForm #editButtons button {
+  padding: 0.2rem;
+  color: #2B2D42;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #2B2D42;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.mainpageContainer #editCustomerForm #editButtons button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#D6041D), color-stop(107.5%, rgba(239, 35, 60, 0.65)));
+  background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+}
+
+.mainpageContainer #editCustomerForm #editButtons button:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+
+.mainpageContainer #editCustomerForm #editNotes textarea {
+  width: 99%;
+  outline: none;
+  border: 0.5px solid #2B2D42;
+  border-radius: 3px;
+  color: #2B2D42;
+  font-weight: 600;
+}
+
+.mainpageContainer #editCustomerForm #editNotes textarea:focus {
+  border-color: #EF233C;
+  color: #D90429;
+}
+
+.mainpageContainer #editCustomerForm h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.mainpageContainer .navbarContainer {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .mainpageContainer .navbarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #2B2D42;
+    position: fixed;
+    bottom: 0;
+    padding: 0.1rem;
+    width: 100%;
+    z-index: 999;
+  }
+  .mainpageContainer .navbarContainer i {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+}
+
+.sold {
+  color: #11d42e;
+}
+
+.pending {
+  color: #f9aa00;
+}
+
+.lost {
+  color: #ff6060;
+}
+/*# sourceMappingURL=style.css.map */
