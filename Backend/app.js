@@ -7,7 +7,7 @@ const dotenv = require('dotenv')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const passport = require("passport")
-const port = 3001;
+const PORT = 3001;
 
 const customerRoutes = require('./routes/customerRoutes')
 const statsRoutes = require('./routes/statsRoutes')
@@ -27,23 +27,9 @@ mongoose.connect('mongodb+srv://otb:otb@cluster0.mheoi.mongodb.net/Camping?retry
        console.log("Database connected");
    });
 
-   const whitelist = 'http://localhost:3000'
-        ? 'http://localhost:3000'.split(",")
-        : []
-
-        const corsOptions = {
-            origin: function (origin, callback) {
-              if (!origin || whitelist.indexOf(origin) !== -1) {
-                callback(null, true)
-              } else {
-                callback(new Error("Not allowed by CORS"))
-              }
-            },
-            credentials: true,
-          }
 
 
-   app.use(cors(corsOptions));
+   app.use(cors());
    app.use(express.urlencoded({extended: true}));
    app.use(bodyParser.json());
    app.use(cookieParser(process.env.COOKIE_SECRET))
@@ -53,7 +39,10 @@ mongoose.connect('mongodb+srv://otb:otb@cluster0.mheoi.mongodb.net/Camping?retry
    app.use('/customer',customerRoutes);
    app.use('/stats',statsRoutes);
 
+   app.get('/', (req,res) => {
+    res.send('homepage working');
+});
 
-   app.listen(port, () => {
+   app.listen(PORT, () => {
     console.log(`Server is running on port ${port}`)
 })
