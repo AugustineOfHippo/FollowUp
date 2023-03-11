@@ -142,7 +142,7 @@ export default function EditComponent({setEditCustomer,myCustomer,setMyCustomer,
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`35.168.3.189:5555/customer/edit/${myCustomer._id}`, {
+        fetch(`http://35.168.3.189:5555/customer/edit/${myCustomer._id}`, {
             method:'PUT',
             headers: {
                 'Accept': 'application/json',

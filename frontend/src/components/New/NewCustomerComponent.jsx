@@ -30,7 +30,7 @@ export default function NewCustomerComponent() {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        fetch('35.168.3.189:5555/customer/add', {
+        fetch('http://35.168.3.189:5555/customer/add', {
             method:'POST',
             headers: {
                 'Accept': 'application/json',

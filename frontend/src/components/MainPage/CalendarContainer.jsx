@@ -54,7 +54,7 @@ export default function CalendarContainer() {
     const filterCustomerByDay = async(e) => {
         e.preventDefault();
         const day = e.target.innerText;
-      fetch(`35.168.3.189:5555/customer/date/${year}/${month}/${day}`)
+      fetch(`http://35.168.3.189:5555/customer/date/${year}/${month}/${day}`)
       .then(res => res.json())
       .then(data => {
         console.log(data)
@@ -73,7 +73,7 @@ export default function CalendarContainer() {
     const filterCustomerByRange = async(e) => {
         e.preventDefault();
         console.log(parseInt(e.target[0].value))
-        fetch(`35.168.3.189:5555/customer/ranges`, {
+        fetch(`http://35.168.3.189:5555/customer/ranges`, {
             method:'POST',
             headers: {
                 'Accept': 'application/json',
@@ -93,7 +93,7 @@ export default function CalendarContainer() {
             console.log(data);
             dispatch(setCustomer(data))
         })
-        fetch(`35.168.3.189:5555/stats/ranges`, {
+        fetch(`http://35.168.3.189:5555/stats/ranges`, {
             method:'POST',
             headers: {
                 'Accept': 'application/json',
