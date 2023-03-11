@@ -29,12 +29,12 @@ export default function SearchBarContainer() {
         const filterFunction = (e) => {
                 switch(e.target.textContent){
                         case 'ALL':
-                                fetch('https://followup-production.up.railway.app/customer/')
+                                fetch('35.168.3.189:5555/customer/')
                                 .then(res => res.json())
                                 .then(data => {
                                         dispatch(setCustomer(data))
                                 })
-                                fetch('https://followup-production.up.railway.app/stats/all')
+                                fetch('35.168.3.189:5555/stats/all')
                                 .then(res => res.json())
                                 .then(data => {
                                   dispatch(setClosedSale(data.closed))
@@ -46,12 +46,12 @@ export default function SearchBarContainer() {
                                 })
                                 break;
                         case 'TODAY':
-                                fetch('https://followup-production.up.railway.app/customer/today')
+                                fetch('35.168.3.189:5555/customer/today')
                                 .then(res => res.json())
                                 .then(data => {
                                         dispatch(setCustomer(data))
                                 })
-                                fetch('https://followup-production.up.railway.app/stats/today')
+                                fetch('35.168.3.189:5555/stats/today')
                                 .then(res => res.json())
                                 .then(data => {
                                   dispatch(setClosedSale(data.closed))
@@ -64,12 +64,12 @@ export default function SearchBarContainer() {
                                 break;
 
                         case 'WEEK':
-                                fetch('https://followup-production.up.railway.app/customer/thisweek')
+                                fetch('35.168.3.189:5555/customer/thisweek')
                                 .then(res => res.json())
                                 .then(data => {
                                         dispatch(setCustomer(data))
                                 })
-                                fetch('https://followup-production.up.railway.app/stats/thisweek')
+                                fetch('35.168.3.189:5555/stats/thisweek')
                                 .then(res => res.json())
                                 .then(data => {
                                   dispatch(setClosedSale(data.closed))
@@ -82,12 +82,12 @@ export default function SearchBarContainer() {
                                 break;
 
                         case 'MONTH':
-                                fetch('https://followup-production.up.railway.app/customer/thismonth')
+                                fetch('35.168.3.189:5555/customer/thismonth')
                                 .then(res => res.json())
                                 .then(data => {
                                         dispatch(setCustomer(data))
                                 })
-                                fetch('https://followup-production.up.railway.app/stats/thismonth')
+                                fetch('35.168.3.189:5555/stats/thismonth')
                                 .then(res => res.json())
                                 .then(data => {
                                   dispatch(setClosedSale(data.closed))
@@ -100,12 +100,12 @@ export default function SearchBarContainer() {
                                 break;
 
                         case 'YEAR':
-                                fetch('https://followup-production.up.railway.app/customer/thisyear')
+                                fetch('35.168.3.189:5555/customer/thisyear')
                                 .then(res => res.json())
                                 .then(data => {
                                         dispatch(setCustomer(data))
                                 })
-                                fetch('https://followup-production.up.railway.app/stats/thisyear')
+                                fetch('35.168.3.189:5555/stats/thisyear')
                                 .then(res => res.json())
                                 .then(data => {
                                   dispatch(setClosedSale(data.closed))
@@ -125,7 +125,7 @@ export default function SearchBarContainer() {
                 e.preventDefault();
                 console.log(e.target[0].value)
                 console.log(e.target[1].value)
-                fetch('https://followup-production.up.railway.app/customer/search', {
+                fetch('35.168.3.189:5555/customer/search', {
                 method:'POST',
                 headers: {
                 'Accept': 'application/json',

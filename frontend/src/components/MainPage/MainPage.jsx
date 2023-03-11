@@ -13,12 +13,12 @@ export default function MainPage() {
   const [loading,setLoading] = useState(false);
 
   const getCustomers = async() => {
-      fetch('https://followup-production.up.railway.app/customer/')
+      fetch('35.168.3.189:5555/customer/')
       .then(res => res.json())
       .then(data => {
           dispatch(setCustomer(data))
       });
-      fetch('https://followup-production.up.railway.app/stats/thisyear')
+      fetch('35.168.3.189:5555/stats/thisyear')
       .then(res => res.json())
       .then(data => {
         dispatch(setClosedSale(data.closed))

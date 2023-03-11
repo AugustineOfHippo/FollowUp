@@ -15,7 +15,7 @@ export default function CallContainer({customer}) {
 
     const handleDelete = (e) => {
         e.preventDefault();
-        fetch(`https://followup-production.up.railway.app/customer/delete/${customer._id}`, {
+        fetch(`35.168.3.189:5555/customer/delete/${customer._id}`, {
             method:'DELETE',
             headers: {
                 'Accept': 'application/json',
