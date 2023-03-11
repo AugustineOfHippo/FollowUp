@@ -1,0 +1,691 @@
+// @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+$color0:#ffffff;
+$color1:#2B2D42;
+$color2:#11d42e;
+$color3:#f9aa00;
+$color4:#ff6060;
+$color5:#6388E7;
+$color6:#EF233C;
+$color7:#D90429;
+
+// * {
+//     outline: solid 1px red;
+// }
+
+html,body {
+    font-family: 'Blinker', sans-serif;
+
+    // font-family: 'Oswald', sans-serif;
+
+    // font-family: 'Poppins', sans-serif;
+
+    // font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 250);
+    margin:0;
+    padding:0;
+    height:100%;
+    // max-width: 1500px;
+    // width:1500px;
+}
+
+
+    .mainpageContainer{
+        display: flex;
+        width:100%;
+        .mainpageContent {
+                min-width:60rem;
+                // max-width:100%;
+                width:100%;
+            .callsStatsContainer{
+                margin-top:1rem;
+                margin-left:auto;
+                margin-right:auto;
+                max-width:80rem;
+                display: flex;
+                justify-content: space-between;
+                .callsContent {
+                    background-color:$color1;
+                    border-radius: 10px;
+                    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                    width:20rem;
+                    min-width:10rem;
+                    max-width:20rem;
+                    display: flex;
+                    flex-direction: column;
+                    padding:1rem;
+                    color:$color0;
+                    .contentLogoContainer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h3{
+                            margin:0;
+                            padding:0;
+                            margin-left:0.4rem;
+                        }
+                        .contentLogo1{
+                            max-width:3rem;
+                            width:3rem;
+                            max-height:3rem;
+                            height:3rem;
+                            background-color:$color0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 5px;
+                            i {
+                                color:$color1;
+                                font-size:2rem;
+                            }
+                        }
+                        .contentLogo2 {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width:2rem;
+                            height:2rem;
+                            border-radius: 100%;
+                            background-color: $color0;
+                            margin-left:auto;
+                            i {
+                                font-size:1.2rem;
+                                color:$color1;
+                            }
+                        }
+                    }
+                    .contentCallsContainer{
+                        h2:nth-of-type(1){
+                            margin-top:0.5rem;
+                        }
+                        h2 {
+                            margin:0;
+                        }
+                    }
+                }
+            }
+            .searchBarContainer {
+                min-width:50rem;
+                width:80rem;
+                margin-top:2.5rem;
+                margin-left:auto;
+                margin-right:auto;
+                .searchBarContent {
+                    width:20rem;
+                    min-width:5rem;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .addCallButton{
+                        button{
+                            color:$color1;
+                            width:6rem;
+                            height:2rem;
+                            background-color: $color0;
+                            border:1px solid $color1;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            &:hover {
+                                cursor: pointer;
+                                color:$color0;
+                                border-color: $color0;
+                                background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+                            }
+                        }
+                    }
+                    .searchBar{
+
+                        form {
+                            height:1.3rem;
+                            margin-left:0.5rem;
+                            border:1px solid $color1;
+                            border-radius: 5px;
+                            padding:0.3rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                        }
+                        input {
+                        background-color:transparent;
+
+                            border:none;
+                            font-weight: 600;
+                            outline:none;
+                        }
+                        select {
+                            background-color: transparent;
+                            border:none;
+                            font-size:0.8rem;
+                            font-weight: 700;
+                            width:6rem;
+                            text-align: center;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            // max-width:5rem;
+                            &:hover {
+                                cursor: pointer;
+                                color:$color6;
+                            }
+                        }
+                        button {
+                            background-color: transparent;
+                            border:none;
+                            font-size:0.8rem;
+                            font-weight:700;
+                            &:hover {
+                                cursor: pointer;
+                                color:$color6;
+                            }
+                        }
+                    }
+                    .filterBarButtons{
+                        display: inline-block;
+                        // justify-content: center;
+                        // align-items: center;
+                        margin-left:0.5rem;
+                        position:relative;
+                        z-index: 9999;
+                        &:hover {
+                            .filterList {
+                                display: block;
+                            }
+                        }
+                        // FILTER DROPDOWN
+                        .filterList {
+                            border-radius: 5px;
+                            display: none;
+                            position:absolute;
+                            border:1px solid $color1;
+                            list-style: none;
+                            margin:0;
+                            padding:0;
+                            background-color: $color1;
+                            color:$color0;
+                            // margin-top:0.1rem;
+                                li{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    width:6rem;
+                                    height:2rem;
+                                    margin:0;
+                                    font-weight: 600;
+                                    &:hover {
+                                        cursor: pointer;
+                                        color:$color0;
+                                        border-color: $color0;
+                                        background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+                                    }
+                                }
+                        }
+                        // FILTER DAY/WEEK BUTTON
+                        button {
+                            color:$color1;
+                            width:6rem;
+                            height:2rem;
+                            background-color: $color0;
+                            border:1px solid $color1;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            &:hover {
+                                cursor: pointer;
+                                color:$color0;
+                                border-color: $color0;
+                                background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+                            }
+                        }
+
+                        i{
+                            color:$color1;
+                            font-size:2rem;
+                        }
+                        select {
+                            margin-left:0.3rem;
+                            background-color: $color1;
+                            color:$color0;
+                            border-radius: 10px;
+                            border:none;
+                            padding:0.5rem;
+                            font-size:1rem;
+                            font-weight:600;
+                            &:hover {
+                            color:$color2;
+
+                            }
+                        }
+                    }
+                    .calendarFilterButton {
+                        display: inline-block;
+                        position:relative;
+                        &:hover {
+                            
+                            // .calendarContainer{
+                            //     display: block;
+                            // }
+                            #calendarLogo{
+                                cursor: pointer;
+                                color:#D6041D;
+                            }
+                        }
+                        i {
+                            margin-left:0.5rem;
+                            font-size:2rem;
+                        }
+                        .calendarContainer {
+                            display: none;
+                            position: absolute;
+                            z-index: 9999;
+                            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                            background-color: rgb(255, 255, 255);
+                            .calendarContent {
+                                display: flex;
+                                flex-direction: column;
+                                padding:1rem;
+                                .selectDate {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-bottom:0.6rem;
+                                    form {
+                                        display: flex;
+                                        button{
+                                            background-color: transparent;
+                                            border:none;
+                                        }
+                                    }
+                                    div{
+                                        display: flex;
+                                        align-items: center;
+                                        input{
+                                            border:none;
+                                            outline:none;
+                                            &:focus{
+                                                color:$color6;
+                                                border-bottom:1px solid $color6;
+                                            }
+                                        }
+                                        input:nth-of-type(1){
+                                            margin-left:0.2rem;
+                                            width:1.5rem;
+                                        }
+                                        input:nth-of-type(2){
+                                            margin-left:0.2rem;
+                                            width:1.5rem;
+                                        }
+                                        input:nth-of-type(3){
+                                            margin-left:0.2rem;
+                                            width:2.4rem;
+                                        }
+                                        h5{
+                                            margin:0;
+                                        }
+                                    }
+                                    div:nth-of-type(2){
+                                        margin-left:0.4rem;
+                                    }
+                                    #rightArrowSearch{
+                                        font-size:1.5rem;
+                                        &:hover{
+                                            cursor: pointer;
+                                            color:$color6;
+                                        }
+                                    }
+                                }
+                                .calendarHeader{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    select{
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        background-color: transparent;
+                                        border:none;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        &:hover{
+                                            cursor: pointer;
+                                            color:$color6;
+                                        }
+                                    }
+                                    input {
+                                            border:none;
+                                            outline:none;
+                                            font-weight: 600;
+                                            width:2.3rem;
+                                            &:focus{
+                                                color:$color6;
+                                                border-bottom:1px solid $color6;
+                                            }
+                                    }
+                                }
+                                .calendarDays{
+                                    display: flex;
+                                    width:21rem;
+                                    list-style: none;
+                                    margin:0;
+                                    padding:0;
+                                    // justify-content: space-between;
+                                    column-gap: 0.4rem;
+                                    text-align: center;
+                                    // justify-content: center;
+                                    li{
+                                        width:2.15rem;
+                                        border-radius: 3px;
+                                        padding:0.2rem;
+                                    }
+                                }
+                                .calendarBody{
+                                    width:21rem;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    // justify-content: center;
+                                    text-align: center;
+                                    row-gap: 0.4rem;
+                                    column-gap: 0.4rem;
+                                    .calendarDaySquare{
+                                        width:2rem;
+                                        border:1px solid $color1;
+                                        border-radius: 3px;
+                                        padding:0.2rem;
+                                        p{
+                                            margin:0;
+                                        }
+                                        &:hover{
+                                            cursor: pointer;
+                                            border:1px solid $color0;
+                                            color:$color0;
+                                            background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .callsContainer {
+                width:82rem;
+                // min-width:50rem;
+                display: flex;
+                margin-left:auto;
+                margin-right:auto;
+                flex-direction: column;
+                margin-top:1rem;
+                height:37rem;
+                overflow: scroll;  
+                position:relative;
+                .callerContainer{
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    display: flex;
+                    // max-width:80rem;
+                    width:80rem;
+                    min-width:75%;
+                    margin-left:auto;
+                    margin-right:auto;
+                    position:relative;
+                    margin-top:0.2rem;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        // border-bottom: 1px solid #b3b3b5;
+                        padding:0.2rem;
+                    }
+                    h4,h6{
+                        margin:0;
+                    }
+                    h4{
+                        font-weight: 600;
+                        font-size:0.9rem;
+                    }
+
+                    .customerStatus {
+                        width:8%;
+                        max-width:8%;
+                        min-width: 6%;
+                        h4{
+                            text-transform: uppercase;
+                        }
+                        .customerEditDeleteContainer{
+                            display: flex;
+                            // display: none;
+                            flex-direction: row;
+                            position:absolute;
+                            // width:4rem;
+                            left:-2.5%;
+                            border:none;
+                            opacity: 10%;
+                            z-index: 998;
+                            padding:0rem 1rem;
+                            // height:100%;
+                            justify-content: center;
+                            align-items: center;
+                            // &:hover{
+                            //     cursor: pointer;
+                            //     opacity: 100%;
+                            // }
+                            i{
+                                // z-index: 999;
+                                font-size:1.2rem;
+                                color:$color7;
+                                &:hover{
+                                color:$color6;
+                                }
+                            }
+                        }
+                    }
+                    .customerPhone{
+                        // width:10rem;
+                        // min-width:7rem;
+                        // max-width:10rem;
+                        width:10%;
+                        max-width:10%;
+                        min-width:9%;
+                    }
+                    .customerName {
+                        width: 15%;
+                        max-width:15%;
+                        min-width:12%;
+                    }
+                    .customerTruck{
+                        width:15%;
+                        max-width:20%;
+                        min-width: 15%;
+                    }
+                    .customerPart{
+                        width:15%;
+                        max-width:15%;
+                        min-width:10%;
+                        white-space: nowrap;
+                         overflow: hidden;
+                        text-overflow: ellipsis;
+                        // word-wrap: break-all;
+
+
+                    }
+                    .customerPrice {
+                        width:6%;
+                        max-width:6%;
+                        min-width:5%;
+                    }
+                    .customerNotes{
+                        width:30%;
+                        // max-width:31%;
+                        min-width:15%;
+                        max-width:31%;
+                        white-space: nowrap;
+                        overflow:hidden;
+                        text-overflow: ellipsis;
+
+                    }
+                    &:hover{
+                        background-color: $color1;
+                        .customerPart{
+                            white-space:unset;
+                            overflow:unset;
+                           text-overflow: unset;
+                           word-wrap: break-all;
+                        }
+                        .customerNotes{
+                            white-space:unset;
+                            overflow:unset;
+                           text-overflow: unset;
+                           word-wrap: break-all;
+                        }
+                        h6{
+                            color:$color0;
+                        }
+                        .customerEditDeleteContainer{
+                            display:block;
+                            opacity: 100;
+                            // background-color: $color1;
+                            cursor: pointer;
+                        }
+                    }
+                }
+        }
+        // .callerContainerMobile{
+        //     display: none;
+        // }
+    }
+    #editCustomerForm{
+        z-index: 999;
+        background-color: $color0;
+        position:absolute;
+        left:15rem;
+        display: flex;
+        flex-direction: column;
+        padding:1rem;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color:$color1;
+        input {
+            padding:0.5rem;
+            outline:none;
+            border:0.5px solid $color1;
+            border-radius: 3px;
+            color:$color1;
+            font-weight: 600;
+            &:focus {
+                border-color:$color6;
+                color:$color7;
+            }
+        }
+        #editStatus{
+            h4{
+                margin:0;
+            }
+            select {
+                background-color: transparent;
+                border:1px solid $color1;
+                font-size:0.8rem;
+                font-weight: 700;
+                width:5rem;
+                max-width:5rem;
+                border-radius: 3px;
+                text-transform: uppercase;
+                &:hover {
+                    cursor: pointer;
+                    color:$color6;
+                }
+            }
+        }
+        #editPhoneCustomer{
+            display: flex;
+            flex-direction: row;
+            div:nth-of-type(1){
+                margin-right:1rem;
+            }
+        }
+        #editTruckPart{
+            display: flex;
+            flex-direction: row;
+            div:nth-of-type(1){
+                margin-right:1rem;
+            }
+        }
+        #editButtons{
+            display: flex;
+            flex-direction: column;
+            margin-top:0.5rem;
+            button{
+                padding:0.2rem;
+                color:$color1;
+                            // width:6rem;
+                            height:2rem;
+                            background-color: $color0;
+                            border:1px solid $color1;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            &:hover {
+                                cursor: pointer;
+                                color:$color0;
+                                border-color: $color0;
+                                background: linear-gradient(270deg, #D6041D 0%, rgba(239, 35, 60, 0.65) 107.5%);
+                            }
+            }
+            button:nth-of-type(1){
+                margin-bottom:0.5rem;
+            }
+        }
+        #editNotes{
+            textarea {
+                width:99%;
+            outline:none;
+            border:0.5px solid $color1;
+            border-radius: 3px;
+            color:$color1;
+            font-weight: 600;
+            &:focus {
+                border-color:$color6;
+                color:$color7;
+            }
+            }
+        }
+        h3 {
+            margin:0;
+            font-weight:600;
+            font-size:1rem;
+            text-transform: uppercase;
+        }
+    }
+    .navbarContainer{
+        display: none;
+        @media (max-width:820px){
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $color1;
+            position: fixed;
+            bottom:0;
+            // height:5%;
+            padding:0.1rem;
+            width:100%;
+            z-index: 999;
+            i{
+                color:$color0;
+                font-size:2rem;
+            }
+        }
+    }
+}
+
+
+.sold {
+    color:$color2;
+}
+
+.pending {
+    color:$color3;
+}
+.lost {
+    color:$color4;
+}
